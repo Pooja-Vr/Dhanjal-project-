@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* empliment on all li and a tag */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ----------------- start the navbar section ------------------- */
+header {
+    box-shadow: 0px 1px 12px 5px #09050577;
+    margin-bottom: 10px;
+    padding: 0px 30px;
+    height: 70px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.navbar-container .logo img {
+    width: 150px;
+}
+
+.navbar ul li a {
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid rgb(249, 196, 196);
+    width: 0%;
+    -o-transition: all.3s linear;
+    -webkit-transition: all.3s linear;
+    -moz-transition: all.3s linear;
+    -ms-transition: all.3s linear;
+    transition: all .3s linear;
+}
+
+ul li:hover::before {
+    width: 100%;
+}
+
+#check {
+    display: none;
+}
+
+.navbar .checkbtn {
+    float: right;
+    font-size: 1.1rem;
+    display: none;
+}
+
+/*-------------------------- image-container section -------------------- */
+/* .image-container, #img{
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+} */
+
+.img-container{
+    background-image: url("https://dhanjal.in/wp-content/uploads/2020/09/Banner-5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 25px;
+    padding: 130px;
+}
+
+.img-container h1{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    padding-top: 2rem;
+}
+
+.overlay-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+}
+
+.overlay-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay-links a:hover {
+    text-decoration: underline;
+    color: #4CAF50;
+}
+
+
+/* -----------------Contact-info container --------------- */
+.contact-info{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.contact-info .addr img{
+    padding: 1.2rem;
+}
+
+.contact-info .addr h3{
+    /* text-align: center; */
+    padding: 1.2rem;
+}
+
+.contact-info .addr p{
+    line-height: 1.4rem;
+}
+
+.contact-info .phone img{
+    padding: 1.2rem;
+}
+
+.contact-info .phone h3{
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.contact-info .phone p{
+    line-height: 1.5rem;
+    text-align: center;
+
+}
+
+.contact-info .gmail img{
+    padding: 1.2rem;
+}
+
+.contact-info .gmail h3{
+    /* text-align: center; */
+    padding: 1.2rem;
+}
+
+.contact-info .gmail p{
+    line-height: 1.6rem;
+    text-align: left;
+    /* color: blue; */
+
+}
+
+/* ----------- Display-container section -------------- */
+.display-container{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.display-container .location{
+    margin-top: 20px;
+
+}
+
+/* contact form */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f2f2f2;
+} */
+
+
+
+/* ----------------Form-container section -------------*/
+.form-container {
+    width: 50%;
+    margin:20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    height: 100px;
+}
+.form-group button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+
+/* -------------- Call us section/adrss section start -------------*/
+.callbox{
+    background-color:rgba(0, 0, 0, 0.8);
+    text-align: center;
+    height: 40vh;
+    margin-top: 2px;
+}
+
+.adrss h1{
+    /* text-align: center; */
+    color: rgb(41, 213, 92);
+    font-size: 20px;
+  padding: 20px;
+     
+}
+.adrss p{
+    color: white;
+    /* margin-bottom: 8.4rem; */
+    font-size: 15px;
+    margin: 10px;
+}
+.adrss .cont a{
+    color: rgb(41, 213, 92);
+    font-size: 20px;
+  padding: 20px;
+  
+}
+.email .mail{
+    color: rgb(41, 213, 92);
+   margin-top: 20px;
+
+}
+
+.email .pooja{
+  color: white;
+  /* padding: 20px; */
+
+}
+
+.adrss a:hover{
+    color:white;
+    text-decoration: none;
+
+}
+
+/*--------------- Footer section -------------------*/
+footer {
+    padding: 20px 0;
+    background-color: #212020;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 40px; */
+}
+footer img {
+    margin-bottom: 20px;
+    width: 190px;
+}
+footer .box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+footer .box .listtag {
+    flex: 1;
+    margin: 0 10px;
+}
+footer .box .listtag h6 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+footer .box .listtag p{
+    color: #fcf8f8;
+    line-height: 1.3rem;
+    text-align: left;
+    font-size: 0.8rem;
+}
+footer .box .listtag ul {
+    list-style: none;
+    padding: 0;
+}
+footer .box .listtag ul li {
+    margin-bottom: 10px;
+}
+
+footer .box .listtag .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+footer .box .listtag .btn input {
+    margin-top: 10px;
+    padding:10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+footer .box .listtag .btn button {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer .box .listtag .btn button:hover{
+    background-color: #3e8e41;
+}
+
+footer .box .listtag .icons i{
+    margin: 10px 10px;
+    cursor: pointer;
+    color: #f3f2f2;
+    font-size: 1.4rem;
+}
+
+footer .box .listtag .icons i:hover{
+    color: #14a9ae;
+}
+
+footer .copyrights{
+    margin-top: 20px;
+    text-align: center;
+    border:none;
+    color: #bfb7b7;
+    display:inline;
+}
+
+
+
+
+
+
